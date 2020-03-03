@@ -2,4 +2,4 @@
 
 
 def in_dict(dict, item_to_find):
-    pass
+    return item_to_find in dict.values()

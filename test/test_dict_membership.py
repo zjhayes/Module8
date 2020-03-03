@@ -9,7 +9,7 @@ class MyTestCase(unittest.TestCase):
         self.assertTrue(dict_membership.in_dict(test_set, item_to_search))
 
     def test_in_dict_false(self):
-        test_set = {'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5}
+        test_set = {'one': 1, 'two': 2, 'three': 3, 'four': 4}
         item_to_search = 5
         self.assertFalse(dict_membership.in_dict(test_set, item_to_search))
 
