@@ -8,6 +8,11 @@ class MyTestCase(unittest.TestCase):
         item_to_check = 5
         self.assertTrue(set_membership.in_set(test_set, item_to_check))
 
+    def test_in_set_false(self):
+        test_set = {1, 2, 3, 4}
+        item_to_check = 5
+        self.assertFalse(set_membership.in_set(test_set, item_to_check))
+
 
 if __name__ == '__main__':
     unittest.main()
