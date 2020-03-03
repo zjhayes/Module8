@@ -2,4 +2,4 @@
 
 
 def in_set(set, item_to_check):
-    pass
+    return item_to_check in set
