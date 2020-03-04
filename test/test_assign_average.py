@@ -7,20 +7,40 @@ class MyTestCase(unittest.TestCase):
         actual = assign_average.switch_average('A')
         self.assertEqual(actual, 90)
 
+    def test_a2(self):
+        actual = assign_average.switch_average('a')
+        self.assertEqual(actual, 90)
+
     def test_b(self):
         actual = assign_average.switch_average('B')
+        self.assertEqual(actual, 80)
+
+    def test_b2(self):
+        actual = assign_average.switch_average('b')
         self.assertEqual(actual, 80)
 
     def test_c(self):
         actual = assign_average.switch_average('C')
         self.assertEqual(actual, 70)
 
+    def test_c2(self):
+        actual = assign_average.switch_average('c')
+        self.assertEqual(actual, 70)
+
     def test_d(self):
         actual = assign_average.switch_average('D')
         self.assertEqual(actual, 60)
 
+    def test_d2(self):
+        actual = assign_average.switch_average('d')
+        self.assertEqual(actual, 60)
+
     def test_d(self):
         actual = assign_average.switch_average('F')
+        self.assertEqual(actual, 50)
+
+    def test_d2(self):
+        actual = assign_average.switch_average('f')
         self.assertEqual(actual, 50)
 
     def test_invalid(self):
