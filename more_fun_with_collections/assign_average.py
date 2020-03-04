@@ -9,5 +9,5 @@ def switch_average(grade):
         'D': 60,
         'F': 50
     }
-    return switch.get(grade.upper())
+    return switch.get(grade.upper(), "Invalid grade")
 
